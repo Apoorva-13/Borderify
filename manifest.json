@@ -1,0 +1,18 @@
+{
+  "manifest_version":2,
+  
+  "name":"boderify",
+  "version":"1.1.1",
+  "description":"first addon",
+  "icons":{
+    "64":"index.jpeg" 
+  },
+  "content_scripts": [
+    {
+      "matches":["*://*.mozilla.org/*"],
+      "matches":["<all_urls>"],
+      "js": ["borderify.js"] 
+    }
+  ]
+}
+   
